@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "Lpu Oas Copy Paste in 1 Click",
+    "version": "0.0.3",
+    "description":"If I click on any question, the question will be automatically copied; there is no need to manually copy the text.",
+    "author": "Ayushman Medcalia",
+    "action": {
+        "default_popup": "./popup.html",
+        "default_icon": "./oas3.png",
+        "default_title": "Oas Copy Paste in 1 Click"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["./content.js"]
+        }
+    ],
+    "icons": {
+        "128": "./oas3.png"
+    },
+    "background": {
+        "service_worker": "./background.js"
+    },
+    "permissions": [
+        "scripting",
+        "tabs",
+        "activeTab"
+    ]
+}
