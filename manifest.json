@@ -1,0 +1,34 @@
+{
+    "manifest_version": 3,
+    "name": "Oas Copy Paste Extension",
+    "version": "1.0",
+    "description": "If I click on any question, the question will be automatically copied; there is no need to manually copy the text.",
+    "permissions": ["clipboardWrite", "activeTab"],
+    "background": {
+        "service_worker": "./background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["./content.js"]
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "./images.png",
+            "48": "./images.png",
+            "128": "./images.png"
+        }
+    },
+    "icons": {
+        "16": "./images.png",
+        "48": "./images.png",
+        "128": "./images.png"
+    },
+    "permissions": [
+        "activeTab",
+        "tabs"
+    ]
+}
+

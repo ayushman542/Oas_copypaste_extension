@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Navbar for Chrome Extension</title>
+    <style>
+        /* Navbar styles */
+        body {
+            height: 300px; /* Increased height to accommodate instructions */
+            width: 300px;
+            background-color: rgb(241, 241, 241); /* Set background color to white */
+            color: black; /* Set text color to black */
+            font-family: Arial, sans-serif; /* Using a standard font for clarity */
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        /* Left side text */
+        .left-text {
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+        /* Right side text */
+        .right-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        .right-icons > div {
+            margin-right: 10px; /* Adjust the margin between icons */
+        }
+
+        .right-icons > div:last-child {
+            margin-right: 0; /* Remove margin from the last icon */
+        }
+
+        .right-icons i {
+            font-size: 25px;
+            color: white; /* Set default color */
+            transition: color 0.3s; /* Add transition for smooth color change */
+        }
+
+        /* Change color on hover */
+        .right-icons i:hover {
+            color: rgb(227, 227, 227);
+        }
+
+        /* Instructions */
+        .instructions {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="left-text">OAS LPU</div>
+        <div class="right-icons">
+            <div id="github"><i class="fab fa-github"></i></div>
+            <div id="tele"><i class="fab fa-telegram"></i></div>
+            <div id="youtube"><i class="fab fa-youtube"></i></div> 
+            <div id="insta"><i class="fab fa-instagram"></i></div>
+        </div>
+    </div>
+
+    <!-- Instructions -->
+    <div class="instructions">
+        <h3>To use this Chrome extension:</h3>
+        <P id="demo"> Watch Tutorial <i class="fab fa-youtube"></i></P>
+        <ol>
+            <li>Install the extension by downloading it from the Chrome Web Store.</li>
+            <li>Go to chrome://extensions and upload Extension File</li>
+            <li>Pin the Extension and Login with Oas LPU Open Test </li>
+            <li>when you double click on a question No., it gets copied </li>
+            <li>If you put flag on any question they get not copy</li>
+        </ol>
+        <center><b>@Developed By Ayushman&nbsp; &nbsp; 4/7/24</b></center>
+        <br>
+    </div>
+
+    <script src="./popup.js"></script>
+</body>
+</html>
