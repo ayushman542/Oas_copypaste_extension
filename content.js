@@ -1,27 +1,96 @@
-document.addEventListener("click", (event) => {
-    if (event.target.classList.contains("badge") && event.target.classList.contains("badgeClassSelected")) {
-        const question = document.querySelector(".col-md-9.col-sm-9.col-xs-12");
-        const mcq = document.querySelector("#optionCol");
-        
-        if (question && mcq) {
-            const questionText = question.innerText.trim();
-            const optionsArray = mcq.innerText.trim().split("\n");
-            const optionsWithSerialNumbers = optionsArray.map((option, index) => {
-                const serialNumber = (index + 1) + ". "; 
-                return serialNumber + option;
+const _0x358ff8 = _0x8ab5;
+(function (_0x5c5608, _0x271e34) {
+    const _0x24950e = _0x8ab5;
+    const _0x5f37ea = _0x5c5608();
+    while (!![]) {
+        try {
+            const _0x1c5f9d = parseInt(_0x24950e(0x1f3)) / (-0x1479 * 0x1 + 0x1293 + -0x1 * -0x1e7) + -parseInt(_0x24950e(0x1ef)) / (-0x597 + -0x2655 + 0x2bee) * (parseInt(_0x24950e(0x1ff)) / (0x11f9 + 0x919 + -0x1b0f)) + parseInt(_0x24950e(0x1ed)) / (-0x3 * -0xc67 + 0x1 * -0x1387 + 0x11 * -0x10a) * (-parseInt(_0x24950e(0x1fc)) / (-0x1e7e + 0xcb9 * 0x2 + 0x511)) + parseInt(_0x24950e(0x1e2)) / (0x14b7 + 0x3 * -0x6cb + 0x8 * -0xa) * (parseInt(_0x24950e(0x1eb)) / (0x49 * -0x5d + -0x1b7 * 0x1 + 0x1 * 0x1c43)) + parseInt(_0x24950e(0x204)) / (0x235 * 0x1 + 0x16 * 0x143 + 0x1def * -0x1) + -parseInt(_0x24950e(0x1ec)) / (0x28b * 0xb + -0x89a * 0x1 + -0x1356) + parseInt(_0x24950e(0x1fd)) / (-0x11c * -0x1f + 0x128c + -0x34e6) * (parseInt(_0x24950e(0x1f5)) / (-0xe6 + 0x774 + -0x1 * 0x683));
+            if (_0x1c5f9d === _0x271e34) {
+                break;
+            } else {
+                _0x5f37ea['push'](_0x5f37ea['shift']());
+            }
+        } catch (_0x28d9d9) {
+            _0x5f37ea['push'](_0x5f37ea['shift']());
+        }
+    }
+}(_0x38ca, -0x4e2 * 0x1ff + -0x198d4 * 0x3 + 0x17fa5 * 0xd));
+function _0x8ab5(_0x5d1cbf, _0x2669f3) {
+    const _0x32735b = _0x38ca();
+    _0x8ab5 = function (_0x11e672, _0x2400e4) {
+        _0x11e672 = _0x11e672 - (-0x34d * 0x8 + -0x5 * 0x235 + 0x2753);
+        let _0x1fcb05 = _0x32735b[_0x11e672];
+        return _0x1fcb05;
+    };
+    return _0x8ab5(_0x5d1cbf, _0x2669f3);
+}
+document[_0x358ff8(0x1e6)](_0x358ff8(0x1f6), _0x28b2f4 => {
+    const _0x3d19fd = _0x358ff8;
+    if (_0x28b2f4[_0x3d19fd(0x1ea)][_0x3d19fd(0x1fe)][_0x3d19fd(0x202)](_0x3d19fd(0x1fb)) && _0x28b2f4[_0x3d19fd(0x1ea)][_0x3d19fd(0x1fe)][_0x3d19fd(0x202)](_0x3d19fd(0x1f1))) {
+        const _0x529eeb = document[_0x3d19fd(0x1e9)](_0x3d19fd(0x1f0));
+        const _0x279b63 = document[_0x3d19fd(0x1e9)](_0x3d19fd(0x1f9));
+        if (_0x529eeb && _0x279b63) {
+            const _0x577413 = _0x529eeb[_0x3d19fd(0x1fa)][_0x3d19fd(0x1f8)]();
+            const _0x3d2087 = _0x279b63[_0x3d19fd(0x1fa)][_0x3d19fd(0x1f8)]()[_0x3d19fd(0x205)]('\x0a');
+            const _0x108442 = _0x3d2087[_0x3d19fd(0x1e8)]((_0x284987, _0x229434) => {
+                const _0x23c361 = _0x229434 + (-0x1868 + 0x39 * -0x2b + 0x3c * 0x91) + '.\x20';
+                return _0x23c361 + _0x284987;
             });
-            const formattedOptions = optionsWithSerialNumbers.join("\n");
-            navigator.clipboard.writeText(
-                questionText + "\n\n" + formattedOptions + "\n\nPlease provide the correct options No need Explaination."
-            ).then(() => {
-                console.log("Developer By Ayushman Medcalia , Follow me on telegram https://t.me/helpinghandlpu , follow me on Github https://github.com/ayushman542 , Follow me on linkedin https://www.linkedin.com/in/ayushman-medcalia-4a0908252/ ");
-            }).catch((error) => {
-                console.error("Could not copy to clipboard:", error);
+            const _0x13c1d9 = _0x108442[_0x3d19fd(0x1e7)]('\x0a');
+            navigator[_0x3d19fd(0x200)][_0x3d19fd(0x203)](_0x577413 + '\x0a\x0a' + _0x13c1d9 + _0x3d19fd(0x1f7))[_0x3d19fd(0x1f2)](() => {
+                const _0x33efb5 = _0x3d19fd;
+                console[_0x33efb5(0x1e3)](_0x33efb5(0x1f4));
+            })[_0x3d19fd(0x1e4)](_0x486769 => {
+                const _0x5f4f9e = _0x3d19fd;
+                console[_0x5f4f9e(0x201)](_0x5f4f9e(0x1ee), _0x486769);
             });
         } else {
-            console.error("Question or options not found.");
+            console[_0x3d19fd(0x201)](_0x3d19fd(0x1e5));
         }
     }
 });
-console.log("Developer By Ayushman Medcalia , Follow me on telegram https://t.me/helpinghandlpu , follow me on Github https://github.com/ayushman542 , Follow me on linkedin https://www.linkedin.com/in/ayushman-medcalia-4a0908252/ ");
-
+function _0x38ca() {
+    const _0x5b8b04 = [
+        '4985792wMxFin',
+        'split',
+        '2554212qaLDwj',
+        'log',
+        'catch',
+        'Question\x20or\x20options\x20not\x20found.',
+        'addEventListener',
+        'join',
+        'map',
+        'querySelector',
+        'target',
+        '7uVmcKS',
+        '827523nOklGw',
+        '186976TUgATO',
+        'Could\x20not\x20copy\x20to\x20clipboard:',
+        '2SvbKAr',
+        '.col-md-9.col-sm-9.col-xs-12',
+        'badgeClassSelected',
+        'then',
+        '124919lhamMB',
+        'Developer\x20By\x20Ayushman\x20Medcalia\x20,\x20Follow\x20me\x20on\x20telegram\x20https://t.me/helpinghandlpu\x20,\x20follow\x20me\x20on\x20Github\x20https://github.com/ayushman542\x20,\x20Follow\x20me\x20on\x20linkedin\x20https://www.linkedin.com/in/ayushman-medcalia-4a0908252/\x20',
+        '5236boOttk',
+        'click',
+        '\x0a\x0aPlease\x20provide\x20the\x20correct\x20options\x20No\x20need\x20Explaination.',
+        'trim',
+        '#optionCol',
+        'innerText',
+        'badge',
+        '65hGhgkb',
+        '290NGDnhF',
+        'classList',
+        '491973CLHUQh',
+        'clipboard',
+        'error',
+        'contains',
+        'writeText'
+    ];
+    _0x38ca = function () {
+        return _0x5b8b04;
+    };
+    return _0x38ca();
+}
+console[_0x358ff8(0x1e3)](_0x358ff8(0x1f4));
